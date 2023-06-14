@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href=" CSS/site.css" />
+    <title></title>
+</head>
+<body>
+    <div class="map">
+        <svg height="1025.8605" width="1227.907" viewBox="0 0 1227.907 1025.8605" class="svgMap">
+            <foreignObject x="100" y="100" width="300" height="200">
+                <form>
+                    <label for="pointA">Откуда</label>
+                    <input type="text" id="pointA" name="points">
+                    <select id="pointAname" name="bulding">
+                        <option value="Р">Р</option>
+                        <option value="Ф">Ф</option>
+                        <option value="И">И</option>
+                        <option value="ГУК">ГУК</option>
+                        <option value="Х">Х</option>
+                        <option value="С">С</option>
+                        <option value="Т">Т</option>
+                    </select>
+                    <label for="pointB">Куда</label>
+                    <input type="text" id="pointB" name="points">
+                    <select id="pointBname" name="bulding">
+                        <option value="Р">Р</option>
+                        <option value="Ф">Ф</option>
+                        <option value="И">И</option>
+                        <option value="ГУК">ГУК</option>
+                        <option value="Х">Х</option>
+                        <option value="С">С</option>
+                        <option value="Т">Т</option>
+                    </select>
+                    <input type="submit" value="Submit" id="submitButton">
+                    <input type="submit" value="Далее" class="MoveButton" id="outside">
+                </form>
+            </foreignObject>
+            <a href="#">
+                <path class="building" data-name="Р" data-maxfloor=4 data-photo="media/rtf/" d="m 444.71173,902.18595 v 13.21828 h -1.67128 v 17.01664 h 1.51935 v 23.39789 H 419.03483 V 941.99273 H 308.57859 V 916.01197 H 402.9298 V 860.40401 H 351.576 v -29.01945 h 60.01405 v 6.98897 h 9.11606 v -15.9531 h 25.98077 v 16.25697 h -1.97515 v 21.27081 h -1.51934 v 14.73762 h 10.33153 v 27.65205 z" />
+                <path class="building" data-name="Т" data-maxfloor=12 data-photo="media/t/" d="M 866.42512,798.44246 V 602.57689 h 40.8888 v 58.0357 h 15.83359 v 27.34666 h -15.83359 v 61.07424 h 10.24526 v 28.25822 h -10.24526 v 11.24251 h -28.2521 v 9.72327 z" />
+                <path class="building" data-name="Ф" data-maxfloor=12 data-photo="media/f/" d="m 554.78934,800.94588v -26.8648H 552.4936V 662.8733h -2.38998v -67.47438h 35.92386v 34.04957h 19.99241v -1.24952h 50.45627v -33.79206h 20.98426v 54.3382h -12.92189v 13.08756h 11.09957v 55.08261h -29.32101v -55.2915h 10.62097V 647.879h -72.1601v 119.32969h 2.49905v 3.04572h 57.16579v -40.53149h 34.67434V 829.0602H 628.19897V 799.38397H 602.5837v 2.32539h -47.93645z" />
+            </a>
+           
+        </svg>
+        
+        <img src="media/map.png" alt="">
+    </div>
+    <div class="inside">
+        <div class="info">
+            
+            <img src="" alt="" class="inside_map" height="0" width="0">
+            <svg class="overlay" height="0" width="0" > </svg>
+            <img src="media/up.png" alt="" class="up_button">
+            <img src="media/down.png" alt="" class="down_button">
+            <input type="submit" value="Далее" class="MoveButton" id="inside">
+            <h2 class="title"></h2>
+
+        </div>
+    </div>
+    <script src="js/site.js"></script>
+</body>
+</html>
